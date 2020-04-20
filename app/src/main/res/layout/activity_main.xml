@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient"
+    tools:context=".LayoutClasses.MainActivity">
+
+    <Button
+        android:id="@+id/btn_new_game"
+        android:layout_width="@dimen/text_edit_main_menu_width"
+        android:layout_height="@dimen/text_edit_main_menu_height"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/buttons_style_main_menu"
+        android:fontFamily="@font/allan"
+        android:onClick="newGame"
+        android:text="New game"
+        android:textColor="#FF5252"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/text_edit_main_menu_width"
+        android:layout_height="@dimen/text_edit_main_menu_height"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/buttons_style_main_menu"
+        android:text="Continue"
+        android:onClick="resumeGame"
+        android:fontFamily="@font/allan"
+        android:textColor="#FF5252"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="@dimen/text_edit_main_menu_width"
+        android:layout_height="@dimen/text_edit_main_menu_height"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/buttons_style_main_menu"
+        android:text="Settings"
+        android:onClick="openSettings"
+        android:fontFamily="@font/allan"
+        android:textColor="#FF5252"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="@dimen/text_edit_main_menu_width"
+        android:layout_height="@dimen/text_edit_main_menu_height"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/buttons_style_main_menu"
+        android:text="Exit"
+        android:onClick="exit"
+        android:fontFamily="@font/allan"
+        android:textColor="#FF5252"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+
+    <ImageView
+        android:id="@+id/imageViewCar"
+        android:layout_width="280dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90"
+        app:srcCompat="@drawable/rich_car" />
+
+
+    <ImageView
+        android:id="@+id/imageViewWoman"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCar"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/successful_woman" />
+
+    <ImageView
+        android:id="@+id/imageViewMan"
+        android:layout_width="120dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCar"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/successful_man" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/comic_sans_ms_3"
+        android:shadowColor="#4A4A4A"
+        android:shadowDx="20"
+        android:shadowDy="10"
+        android:shadowRadius="1"
+        android:text=" GET RICH "
+        android:textColor="#FFF197"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_new_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#F33955"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="15dp"
+        android:background="#F33955"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

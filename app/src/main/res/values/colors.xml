@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="btn_round_bar_color">#1C97B5</color>
+    <color name="arrow_color_game_window">#B6B6B6</color>
+    <color name="text_edit_main_menu_color">#B6B6B6</color>
+<!--    <color name="black_text_color">#C8C8C8</color>-->
+    <color name="black_text_color">#6F6F6F</color>
+</resources>

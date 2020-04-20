@@ -1,0 +1,394 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.breaktime.businessman"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:5:5-198:19
+12        android:allowBackup="true"
+12-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] /Users/eliseybudnitsky/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/AndroidManifest.xml:24:18-86
+14        android:icon="@mipmap/ic_launcher"
+14-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:7:9-43
+15        android:label="@string/app_name"
+15-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:8:9-41
+16        android:roundIcon="@mipmap/ic_launcher_round"
+16-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:9:9-54
+17        android:screenOrientation="landscape"
+17-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:10:9-46
+18        android:supportsRtl="true"
+18-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:11:9-35
+19        android:theme="@style/AppTheme" >
+19-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:12:9-40
+20        <activity
+20-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:13:9-21:20
+21            android:name="com.breaktime.businessman.Settings"
+21-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:14:13-37
+22            android:screenOrientation="landscape" >
+22-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:15:13-50
+23            <intent-filter>
+23-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+24-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+25
+26                <category android:name="android.intent.category.DEFAULT" />
+26-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+26-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.breaktime.businessman.MoneyActivity" />
+29-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:22:9-51
+29-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:22:19-48
+30        <activity
+30-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:23:9-31:20
+31            android:name="com.breaktime.businessman.CreatePerson"
+31-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:24:13-41
+32            android:screenOrientation="landscape" >
+32-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:25:13-50
+33            <intent-filter>
+33-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+34-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+35
+36                <category android:name="android.intent.category.DEFAULT" />
+36-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+36-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:32:9-40:20
+40            android:name="com.breaktime.businessman.Fines"
+40-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:33:13-34
+41            android:screenOrientation="landscape" >
+41-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:34:13-50
+42            <intent-filter>
+42-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+43-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+44
+45                <category android:name="android.intent.category.DEFAULT" />
+45-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+45-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:41:9-49:20
+49            android:name="com.breaktime.businessman.Person"
+49-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:42:13-35
+50            android:screenOrientation="landscape" >
+50-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:43:13-50
+51            <intent-filter>
+51-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+52-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+53
+54                <category android:name="android.intent.category.DEFAULT" />
+54-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+54-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:50:9-58:20
+58            android:name="com.breaktime.businessman.Rejoice"
+58-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:51:13-36
+59            android:screenOrientation="landscape" >
+59-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:52:13-50
+60            <intent-filter>
+60-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+61-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+63-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:59:9-67:20
+67            android:name="com.breaktime.businessman.Health"
+67-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:60:13-35
+68            android:screenOrientation="landscape" >
+68-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:61:13-50
+69            <intent-filter>
+69-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+70-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+71
+72                <category android:name="android.intent.category.DEFAULT" />
+72-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+72-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+73            </intent-filter>
+74        </activity>
+75        <activity
+75-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:68:9-76:20
+76            android:name="com.breaktime.businessman.Offers"
+76-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:69:13-35
+77            android:screenOrientation="landscape" >
+77-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:70:13-50
+78            <intent-filter>
+78-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+79                <action android:name="android.intent.action.MAIN" />
+79-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+79-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+80
+81                <category android:name="android.intent.category.DEFAULT" />
+81-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+81-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+82            </intent-filter>
+83        </activity>
+84        <activity
+84-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:77:9-85:20
+85            android:name="com.breaktime.businessman.Car"
+85-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:78:13-32
+86            android:screenOrientation="landscape" >
+86-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:79:13-50
+87            <intent-filter>
+87-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+88                <action android:name="android.intent.action.MAIN" />
+88-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+88-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+89
+90                <category android:name="android.intent.category.DEFAULT" />
+90-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+90-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+91            </intent-filter>
+92        </activity>
+93        <activity
+93-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:86:9-94:20
+94            android:name="com.breaktime.businessman.House"
+94-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:87:13-34
+95            android:screenOrientation="landscape" >
+95-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:88:13-50
+96            <intent-filter>
+96-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+97                <action android:name="android.intent.action.MAIN" />
+97-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+97-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+98
+99                <category android:name="android.intent.category.DEFAULT" />
+99-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+99-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+100            </intent-filter>
+101        </activity>
+102        <activity
+102-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:95:9-103:20
+103            android:name="com.breaktime.businessman.Study"
+103-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:96:13-34
+104            android:screenOrientation="landscape" >
+104-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:97:13-50
+105            <intent-filter>
+105-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+106                <action android:name="android.intent.action.MAIN" />
+106-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+106-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+107
+108                <category android:name="android.intent.category.DEFAULT" />
+108-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+108-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+109            </intent-filter>
+110        </activity>
+111        <activity
+111-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:104:9-112:20
+112            android:name="com.breaktime.businessman.Shop"
+112-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:105:13-33
+113            android:screenOrientation="landscape" >
+113-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:106:13-50
+114            <intent-filter>
+114-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+115                <action android:name="android.intent.action.MAIN" />
+115-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+115-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+116
+117                <category android:name="android.intent.category.DEFAULT" />
+117-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+117-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+118            </intent-filter>
+119        </activity>
+120        <activity
+120-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:113:9-121:20
+121            android:name="com.breaktime.businessman.Balance"
+121-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:114:13-36
+122            android:screenOrientation="landscape" >
+122-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:115:13-50
+123            <intent-filter>
+123-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+124                <action android:name="android.intent.action.MAIN" />
+124-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+124-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+126-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+127            </intent-filter>
+128        </activity>
+129        <activity
+129-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:122:9-130:20
+130            android:name="com.breaktime.businessman.News"
+130-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:123:13-33
+131            android:screenOrientation="landscape" >
+131-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:124:13-50
+132            <intent-filter>
+132-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+133                <action android:name="android.intent.action.MAIN" />
+133-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+133-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+134
+135                <category android:name="android.intent.category.DEFAULT" />
+135-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+135-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+136            </intent-filter>
+137        </activity>
+138        <activity
+138-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:131:9-139:20
+139            android:name="com.breaktime.businessman.Business"
+139-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:132:13-37
+140            android:screenOrientation="landscape" >
+140-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:133:13-50
+141            <intent-filter>
+141-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+142                <action android:name="android.intent.action.MAIN" />
+142-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+142-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+143
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+144-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+145            </intent-filter>
+146        </activity>
+147        <activity
+147-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:140:9-148:20
+148            android:name="com.breaktime.businessman.Casino"
+148-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:141:13-35
+149            android:screenOrientation="landscape" >
+149-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:142:13-50
+150            <intent-filter>
+150-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+151                <action android:name="android.intent.action.MAIN" />
+151-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+151-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+152
+153                <category android:name="android.intent.category.DEFAULT" />
+153-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+153-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+154            </intent-filter>
+155        </activity>
+156        <activity
+156-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:149:9-157:20
+157            android:name="com.breaktime.businessman.Bank"
+157-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:150:13-33
+158            android:screenOrientation="landscape" >
+158-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:151:13-50
+159            <intent-filter>
+159-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+160                <action android:name="android.intent.action.MAIN" />
+160-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+160-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+161
+162                <category android:name="android.intent.category.DEFAULT" />
+162-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+162-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+163            </intent-filter>
+164        </activity>
+165        <activity
+165-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:158:9-166:20
+166            android:name="com.breaktime.businessman.Stocks"
+166-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:159:13-35
+167            android:screenOrientation="landscape" >
+167-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:160:13-50
+168            <intent-filter>
+168-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+169                <action android:name="android.intent.action.MAIN" />
+169-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+169-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+170
+171                <category android:name="android.intent.category.DEFAULT" />
+171-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+171-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+172            </intent-filter>
+173        </activity>
+174        <activity
+174-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:167:9-175:20
+175            android:name="com.breaktime.businessman.Work"
+175-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:168:13-33
+176            android:screenOrientation="landscape" >
+176-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:169:13-50
+177            <intent-filter>
+177-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+178                <action android:name="android.intent.action.MAIN" />
+178-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+178-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+179
+180                <category android:name="android.intent.category.DEFAULT" />
+180-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+180-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+181            </intent-filter>
+182        </activity>
+183        <activity
+183-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:176:9-184:20
+184            android:name="com.breaktime.businessman.MainActivity"
+184-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:177:13-41
+185            android:screenOrientation="landscape" >
+185-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:178:13-50
+186            <intent-filter>
+186-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:179:13-183:29
+187                <action android:name="android.intent.action.MAIN" />
+187-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+187-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+188
+189                <category android:name="android.intent.category.LAUNCHER" />
+189-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:182:17-77
+189-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:182:27-74
+190            </intent-filter>
+191        </activity>
+192        <activity
+192-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:185:9-193:20
+193            android:name="com.breaktime.businessman.PlayGame"
+193-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:186:13-37
+194            android:screenOrientation="landscape" >
+194-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:187:13-50
+195            <intent-filter>
+195-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:16:13-20:29
+196                <action android:name="android.intent.action.MAIN" />
+196-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:17-69
+196-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:17:25-66
+197
+198                <category android:name="android.intent.category.DEFAULT" />
+198-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:17-76
+198-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:19:27-73
+199            </intent-filter>
+200        </activity>
+201
+202        <meta-data
+202-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:195:9-197:57
+203            android:name="preloaded_fonts"
+203-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:196:13-43
+204            android:resource="@array/preloaded_fonts" />
+204-->/Users/eliseybudnitsky/AndroidStudioProjects/businessman/app/src/main/AndroidManifest.xml:197:13-54
+205
+206        <provider
+206-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/eliseybudnitsky/.gradle/caches/transforms-2/files-2.1/e67431338a6f08c2b83d4815316a1c8b/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+207            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+207-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/eliseybudnitsky/.gradle/caches/transforms-2/files-2.1/e67431338a6f08c2b83d4815316a1c8b/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+208            android:authorities="com.breaktime.businessman.lifecycle-process"
+208-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/eliseybudnitsky/.gradle/caches/transforms-2/files-2.1/e67431338a6f08c2b83d4815316a1c8b/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+209            android:exported="false"
+209-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/eliseybudnitsky/.gradle/caches/transforms-2/files-2.1/e67431338a6f08c2b83d4815316a1c8b/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+210            android:multiprocess="true" />
+210-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/eliseybudnitsky/.gradle/caches/transforms-2/files-2.1/e67431338a6f08c2b83d4815316a1c8b/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+211    </application>
+212
+213</manifest>

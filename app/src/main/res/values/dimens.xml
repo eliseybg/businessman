@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_game_bar">7dp</dimen>
+    <dimen name="btn_round_bar_size">25dp</dimen>
+    <dimen name="linearLayout_margin_game_window">20dp</dimen>
+    <dimen name="linearLayout_margin_image_game_window">4dp</dimen>
+    <dimen name="linearLayout_text_size_game_window">20sp</dimen>
+    <dimen name="text_edit_main_menu_width">200dp</dimen>
+    <dimen name="text_edit_main_menu_height">50dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="stocks_text_info_size">18sp</dimen>
+</resources>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutClasses.PlayGame">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#fafafa"
+            android:onClick="openMenu"
+            android:paddingStart="7dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="3dp"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="⟨ menu"
+            android:textColor="#1C97B5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/healthImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_game_bar"
+            android:src="@drawable/health"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/health"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_bar_style"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/health_progress_bar"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:maxHeight="50dp"
+                android:minHeight="50dp"
+                android:padding="2dp"
+                android:progressDrawable="@drawable/progressbar"
+                android:scrollbarSize="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnHealth"
+            android:layout_width="@dimen/btn_round_bar_size"
+            android:layout_height="@dimen/btn_round_bar_size"
+            android:layout_marginEnd="@dimen/margin_game_bar"
+            android:background="@drawable/round_bar_style"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="+"
+            android:onClick="openHealth"
+            android:textColor="@color/btn_round_bar_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/happinessImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_game_bar"
+            android:src="@drawable/happiness2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/happiness"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_bar_style"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/happiness_progress_bar"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:maxHeight="50dp"
+                android:minHeight="50dp"
+                android:padding="2dp"
+                android:progressDrawable="@drawable/progressbar"
+                android:scrollbarSize="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnHappiness"
+            android:layout_width="@dimen/btn_round_bar_size"
+            android:layout_height="@dimen/btn_round_bar_size"
+            android:layout_marginEnd="@dimen/margin_game_bar"
+            android:background="@drawable/round_bar_style"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="+"
+            android:onClick="openRejoice"
+            android:textColor="@color/btn_round_bar_color"
+            android:textSize="18sp" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/weeknessImage"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/weekness"-->
+        <!--            android:layout_marginEnd="@dimen/margin_game_bar"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />-->
+
+        <!--        <LinearLayout-->
+        <!--        android:id="@+id/weekness"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:layout_weight="1"-->
+        <!--        android:background="@drawable/rectangle_bar_style"-->
+        <!--        android:layout_marginEnd="@dimen/margin_game_bar"-->
+        <!--        android:orientation="vertical"/>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_game_bar"
+            android:layout_weight="1.5"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ImagineViewMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_game_bar"
+                android:src="@drawable/money"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:text="money"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnMoney"
+                android:layout_width="@dimen/btn_round_bar_size"
+                android:layout_height="@dimen/btn_round_bar_size"
+                android:layout_marginEnd="@dimen/margin_game_bar"
+                android:background="@drawable/round_bar_style"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:onClick="openMoney"
+                android:text="+"
+                android:textColor="@color/btn_round_bar_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:background="#11899B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_bar_style"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="\?"
+        android:textColor="@color/btn_round_bar_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/next_step_game_menu"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/lead_buttons_style"
+        android:textColor="#1C97B5"
+        android:textSize="18sp"
+        android:onClick="nextStep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/right_arrow"
+        android:layout_toEndOf="@+id/left_arrow"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:rowCount="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openWork"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/work" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="Work"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openStocks"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/stocks" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Stocks"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="openBank"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/bank" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-5dp"
+                android:text="Bank"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openCasino"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/casino" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-25dp"
+                android:text="Casino"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openBusiness"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/business" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Business"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openNews"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/news" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="News"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openBalance"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/money_balance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Balance"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openShop"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/shopping_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Shop"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/grid2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/right_arrow"
+        android:layout_toEndOf="@+id/left_arrow"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:rowCount="2"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:onClick="openStudy"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/education" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="Study"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="openHouse"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/house" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="House"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openCar"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-35dp"
+                android:text="Car"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:onClick="openOffers"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/offer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-25dp"
+                android:text="Offer"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openHealth"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/health_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Health"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openRejoice"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/happiness_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rejoice"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openPerson"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Person"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/linearLayout_margin_game_window"
+            android:onClick="openFines"
+            android:background="@drawable/linear_layout_game_window"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/linearLayout_margin_image_game_window"
+                android:src="@drawable/fines" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fines"
+                android:textSize="@dimen/linearLayout_text_size_game_window" />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="arrowPressed"
+        android:gravity="center"
+        android:text="⟨"
+        android:paddingStart="8dp"
+        android:paddingEnd="5dp"
+        android:textColor="@color/arrow_color_game_window"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="arrowPressed"
+        android:gravity="center"
+        android:text="⟩"
+        android:paddingStart="5dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/arrow_color_game_window"
+        android:textSize="50sp" />
+
+</RelativeLayout>

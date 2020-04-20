@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/adamina</item>
+        <item>@font/alef</item>
+        <item>@font/alegreya</item>
+        <item>@font/allan</item>
+        <item>@font/almendra</item>
+        <item>@font/annie_use_your_telescope</item>
+        <item>@font/antic_didone</item>
+        <item>@font/arizonia</item>
+        <item>@font/armata</item>
+        <item>@font/bad_script</item>
+        <item>@font/bigelow_rules</item>
+        <item>@font/bubbler_one</item>
+        <item>@font/gruppo</item>
+        <item>@font/kavivanar</item>
+        <item>@font/lekton</item>
+        <item>@font/piedra</item>
+        <item>@font/tillana</item>
+    </array>
+</resources>
